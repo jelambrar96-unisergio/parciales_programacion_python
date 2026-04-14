@@ -246,12 +246,12 @@ Nota que el origen `(0, 0)` se encuentra en la esquina superior izquierda.
 Teniendo como referencia esto modifica el archivo `rectangulo.py` y realiza cada una de los sigueintes tareas:
 
 1. Cree una clase **Rectangulo** con los atributos enteros `x0`, `y0`, `x1` y `y1`. Esta función debe tener las siguientes validaciones:
-   1. En caso que `x0` sea mayor a `x1`. Se arrojará un error de tipo `ValueError` con el mensaje `x0 debe ser menor a x1`.
-   2. En caso que `y0` sea mayor a `y1`. Se arrojará un error de tipo `ValueError` con el mensaje `y0 debe ser menor a y1`.
+   1. En caso que `x0` sea mayor a `x1`. Se arrojará un error de tipo `ValueError` con el mensaje `x0 debe ser menor o igual a x1`.
+   2. En caso que `y0` sea mayor a `y1`. Se arrojará un error de tipo `ValueError` con el mensaje `y0 debe ser menor o igual a y1`.
 
 2. `x0` y `y0` tienen un valor predeterminado de `0`.
 
-3. `x1` y `y2` tienen un valor predeterminado de `0`.
+3. `x1` y `y1` tienen un valor predeterminado de `0`.
 
 4. Construye métodos `alto` y `ancho` que retornen la altura y el ancho del rectángulo respectivamente.
 
