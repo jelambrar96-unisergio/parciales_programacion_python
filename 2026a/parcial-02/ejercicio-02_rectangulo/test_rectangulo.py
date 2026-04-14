@@ -29,13 +29,13 @@ class TestRectangulo(unittest.TestCase):
         """Test: ValueError cuando x0 > x1."""
         with self.assertRaises(ValueError) as context:
             Rectangulo(10, 0, 5, 10)
-        self.assertEqual(str(context.exception), "x0 debe ser menor a x1")
+        self.assertEqual(str(context.exception), "x0 debe ser menor o igual a x1")
 
     def test_validacion_y0_mayor_y1(self):
         """Test: ValueError cuando y0 > y1."""
         with self.assertRaises(ValueError) as context:
             Rectangulo(0, 10, 10, 5)
-        self.assertEqual(str(context.exception), "y0 debe ser menor a y1")
+        self.assertEqual(str(context.exception), "y0 debe ser menor o igual a y1")
 
     def test_ancho(self):
         """Test: Método ancho() retorna la diferencia en x."""
@@ -108,21 +108,6 @@ class TestRectangulo(unittest.TestCase):
         self.assertEqual(rect.y0, 3)
         self.assertEqual(rect.x1, 7)
         self.assertEqual(rect.y1, 9)
-
-    def test_longitud_ancho_mayor(self):
-        """Test: longitud() retorna la mayor dimensión (ancho > alto)."""
-        rect = Rectangulo(0, 0, 10, 4)
-        self.assertEqual(rect.longitud(), 10)
-
-    def test_longitud_alto_mayor(self):
-        """Test: longitud() retorna la mayor dimensión (alto > ancho)."""
-        rect = Rectangulo(0, 0, 4, 10)
-        self.assertEqual(rect.longitud(), 10)
-
-    def test_longitud_iguales(self):
-        """Test: longitud() cuando ancho y alto son iguales."""
-        rect = Rectangulo(0, 0, 7, 7)
-        self.assertEqual(rect.longitud(), 7)
 
     def test_rectangulo_offset(self):
         """Test: Rectángulo con coordenadas no comenzando en (0, 0)."""

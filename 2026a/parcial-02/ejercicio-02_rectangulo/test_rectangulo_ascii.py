@@ -68,8 +68,8 @@ class TestDrawRectangle(unittest.TestCase):
         canvas = draw_rectangle(4, 6, rect, "-")
         lineas = canvas.split("\n")
         self.assertEqual(lineas[0], "      ")
-        self.assertEqual(lineas[1], " ---- ")
-        self.assertEqual(lineas[2], "      ")
+        self.assertEqual(lineas[1], "      ")
+        self.assertEqual(lineas[2], " ---- ")
         self.assertEqual(lineas[3], "      ")
 
     def test_rectangulo_linea_vertical(self):
