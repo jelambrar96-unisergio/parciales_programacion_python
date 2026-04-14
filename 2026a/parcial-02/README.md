@@ -243,7 +243,7 @@ Toma como referencia el sistema de coordenadas de la siguiente figura:
 
 Nota que el origen `(0, 0)` se encuentra en la esquina superior izquierda.
 
-Teniendo como referencia esto modifica el archivo `recatangulo.py` y realiza cada una de los sigueintes tareas:
+Teniendo como referencia esto modifica el archivo `rectangulo.py` y realiza cada una de los sigueintes tareas:
 
 1. Cree una clase **Rectangulo** con los atributos enteros `x0`, `y0`, `x1` y `y1`. Esta función debe tener las siguientes validaciones:
    1. En caso que `x0` sea mayor a `x1`. Se arrojará un error de tipo `ValueError` con el mensaje `x0 debe ser menor a x1`.
