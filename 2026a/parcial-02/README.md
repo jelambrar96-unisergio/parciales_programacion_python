@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 -->
+
 # Universidad Sergio Arboleda
 
 ## Examen Parcial 2 - Algoritmia y Scripting
@@ -12,11 +14,11 @@ Nombre Completo: **Escriba su nombre aquí**
 
 ### Instrucciones del parcial
 
-El siguiente parcial consta de dos partes: cuatro ejercicios de selección múltiple con única respuesta y dos ejercicios prácticos. 
+El siguiente parcial consta de dos partes: cuatro ejercicios de selección múltiple con única respuesta y dos ejercicios prácticos.
 
 Los ejercicios de selección múltiple se responden seleccionando la respuesta que considere más conviente. Para seleccionar una respuesta basta con escribir una `X` dentro de los corchetes que marcan la opción. Observe el siguiente ejemplo donde se ha seleccionado la opción 4.
 
-```
+```markdown
 - [ ] Opción 1.
 - [ ] Opción 2.
 - [ ] Opción 3.
@@ -31,7 +33,7 @@ def suma(a, b):
     pass
 ```
 
-Para para responder esta pregunta hay que modificar las lineas bajo el comentario tal como se indica en el siguiente bloque de código. 
+Para para responder esta pregunta hay que modificar las lineas bajo el comentario tal como se indica en el siguiente bloque de código.
 
 ```python
 def suma(a, b):
@@ -71,6 +73,7 @@ funcion_c()
 ```
 
 - [ ] Opcion 1:
+
 ```plain
 a
 b
@@ -124,11 +127,9 @@ turtle.done()
 |-----------------------------------------------|-----------------------------------------------|
 | ![Opcion 1](media/pregunta_04__opcion_01.png) | ![Opcion 2](media/pregunta_04__opcion_02.png) |
 
-
 | Opcion 3                                      | Opcion 4                                      |
 |-----------------------------------------------|-----------------------------------------------|
 | ![Opcion 3](media/pregunta_04__opcion_03.png) | ![Opcion 4](media/pregunta_04__opcion_04.png) |
-
 
 - [ ] Opción 1
 - [ ] Opción 2
@@ -137,7 +138,7 @@ turtle.done()
 
 ### Pregunta 3 (5 puntos)
 
-Observa el siguiente bloque de código. 
+Observa el siguiente bloque de código.
 
 ```python
 from math import pi
@@ -185,33 +186,37 @@ def fibbo(n):
 
 ### Ejercicio 1 (30 puntos)
 
-Modifica el archivo `cuadrado_ascii`. Escriba una función que muestre en la consola un cuadrado, alineado al margen izquierdo de la pantalla. La función debe recibir un parámetro entero `lado` que especifica el número de símbolos por lado del cuadrado. También debe recibir un parámetro string `símbolo` que determine el símbolo que será usado, así como otro parámetro llamado `separador` que separa los símbolos del cuadrado (por defecto vacío).
+Modifica el archivo `cuadrado_ascii.py`. Escriba una función que muestre en la consola un cuadrado, alineado al margen izquierdo de la pantalla. La función debe recibir un parámetro entero `lado` que especifica el número de símbolos por lado del cuadrado. También debe recibir un parámetro string `símbolo` que determine el símbolo que será usado, así como otro parámetro llamado `separador` que separa los símbolos del cuadrado (por defecto vacío).
 
 **Ejemplos:**
 
 - Para `lado = 3`, `símbolo = "*"`, `separador = ""`:
-```
+
+```plain
 ***
 ***
 ***
 ```
 
 - Para `lado = 3`, `símbolo = "#"`, `separador = ""`:
-```
+
+```plain
 ###
 ###
 ###
 ```
 
 - Para `lado = 3`, `símbolo = "*"`, `separador = " "`:
-```
+
+```plain
 * * *
 * * *
 * * *
 ```
 
 - Para `lado = 4`, `símbolo = "+"`, `separador = ""`:
-```
+
+```plain
 ++++
 ++++
 ++++
@@ -219,12 +224,12 @@ Modifica el archivo `cuadrado_ascii`. Escriba una función que muestre en la con
 ```
 
 - Para `lado = 1`, `símbolo = "X"`, `separador = ""`:
-```
+
+```plain
 X
 ```
 
 - Para `lado = 0` o valores negativos, la función no debe mostrar nada (cuadrado vacío).
-
 
 Adaptado del ejercicio **6.23** de libro *C++ ¿Cómo programar?*, Deitel. Sexta edición. Pearson education. 2008.
 
@@ -236,26 +241,25 @@ Toma como referencia el sistema de coordenadas de la siguiente figura:
 
 ![rectangulo referencia](media/ejericio_01__enunciado.drawio.png)
 
-Nota que el origen `(0, 0)` se encuentra en la esquina superior izquierda. 
+Nota que el origen `(0, 0)` se encuentra en la esquina superior izquierda.
 
-Teniendo como referencia esto modifica el archivo `recatangulo.py` y realiza cada una de los sigueintes tareas: 
+Teniendo como referencia esto modifica el archivo `recatangulo.py` y realiza cada una de los sigueintes tareas:
 
-1. Cree una clase **Rectangulo** con los atributos enteros `x0`, `y0`, `x1` y `y1`. Esta función debe tener las siguientes validaciones: 
-   1. En caso que `x0` sea mayor a `x1`. Se arrojará un error de tipo `ValueError` con el mensaje `x0 debe ser menor a x1`. 
+1. Cree una clase **Rectangulo** con los atributos enteros `x0`, `y0`, `x1` y `y1`. Esta función debe tener las siguientes validaciones:
+   1. En caso que `x0` sea mayor a `x1`. Se arrojará un error de tipo `ValueError` con el mensaje `x0 debe ser menor a x1`.
    2. En caso que `y0` sea mayor a `y1`. Se arrojará un error de tipo `ValueError` con el mensaje `y0 debe ser menor a y1`.
 
 2. `x0` y `y0` tienen un valor predeterminado de `0`.
 
 3. `x1` y `y2` tienen un valor predeterminado de `0`.
 
-4. Construye métodos `alto` y `ancho` que retornen la altura y el ancho del rectángulo respectivamente. 
+4. Construye métodos `alto` y `ancho` que retornen la altura y el ancho del rectángulo respectivamente.
 
-5. Proporcione métodos `perimetro` y `area` que calculen el perimetro y el area respectivamente. 
+5. Proporcione métodos `perimetro` y `area` que calculen el perimetro y el area respectivamente.
 
 6. Construye un métodos llamado  `es_cuadrado` que retorne una variable tipo `bool` indicando si el rectángulo es un cuadrado.
 
 7. Construye un método llamado `desplazar` que tome dos parámetros `dx` y `dy` y mueva el rectángulo, `dx` unidades a la derecha o a la izquierda en caso que `dx` sea negativo. Anaálogamente, el rectángulo debe moverse `dy` unidades hacia arriba o hacia abajo dependiendo si el valor de `dy` es negativo o positivo respectivamente.
-
 
 Adaptado de los ejercicios **9.11**, **9.12** y **9.13** de libro *C++ ¿Cómo programar?*, Deitel. Sexta edición. Pearson education. 2008.
 
@@ -263,9 +267,10 @@ Adaptado de los ejercicios **9.11**, **9.12** y **9.13** de libro *C++ ¿Cómo p
 
 ### Bonus (20 puntos)
 
-Implementa una función `draw_rectangle()` que acepte los parámetros `alto_canvas`, `ancho_canvas`, `rectangulo` y `simbolo`. Esta función debe generar una representación visual del rectángulo dibujado en un canvas (lienzo) de tamaño `alto_canvas` x `ancho_canvas`.
+Modifica el archivo `rectangulo_ascii.py`. Implementa una función `draw_rectangle()` que acepte los parámetros `alto_canvas`, `ancho_canvas`, `rectangulo` y `simbolo`. Esta función debe generar una representación visual del rectángulo dibujado en un canvas (lienzo) de tamaño `alto_canvas` x `ancho_canvas`.
 
 **Comportamiento esperado:**
+
 - La función debe retornar una cadena que representa el canvas.
 - El canvas debe tener dimensiones de `alto_canvas` filas por `ancho_canvas` columnas.
 - Las celdas dentro del rectángulo deben rellenarse con el símbolo especificado.
@@ -273,18 +278,20 @@ Implementa una función `draw_rectangle()` que acepte los parámetros `alto_canv
 
 **Ejemplo:**
 Si tenemos un canvas de 5x10, un rectángulo `Rectangulo(2, 1, 6, 3)` y símbolo `"#"`, el resultado podría ser:
-```
+
+```plain
           
   ####    
   ####    
           
           
 ```
+
 Donde la primera fila es y=0, y la primera columna es x=0.
 
 Adaptado de los ejercicios **9.11**, **9.12** y **9.13** de libro *C++ ¿Cómo programar?*, Deitel. Sexta edición. Pearson education. 2008.
 
---- 
+---
 
 ```python
 print("¡Mucha suerte!")
